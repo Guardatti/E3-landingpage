@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins';
+    background-color: #d9d3c8;
+}
+
+
+a, ul{
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+header{
+    width: 100%;
+    height: 10px;
+    position: fixed;
+}
+
+.nav{
+    background-color: #262626;
+    width: 100%;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+}
+
+.menu li{
+    margin: 0px 100px 0px 100px;
+}
+
+.menu li a:hover{
+    color: #D3D3D3;
+}
+
+.home{
+
+}
+
+.info_personal{
+
+}
+
+.img{
+    background-image: url(./Imagenes/foto.png);
+    width: 50%;
+    height: 100%;
+    background-repeat: no-repeat;
+}
