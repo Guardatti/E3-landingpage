@@ -90,13 +90,6 @@ button{
 }
 
 
-i{
-    color: white;
-    position: relative;
-    right: 5%
-}
-
-
 .img{
     background-image: url(./Imagenes/foto.png);
     width: 50%;
