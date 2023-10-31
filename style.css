@@ -11,7 +11,9 @@
 
 body{
     font-family: 'Poppins';
-    background-color: #d9d3c8;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 
@@ -23,7 +25,6 @@ a, ul{
 
 header{
     width: 100%;
-    height: 100%;
     position: fixed;
     top: 0;
 }
@@ -34,17 +35,21 @@ header{
     width: 100%;
     height: 80px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
 
 .menu{
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
 .menu li{
+    position: relative;
+    right: 68;
     margin: 0px 100px 0px 100px;
 }
 
@@ -54,13 +59,16 @@ header{
 }
 
 
+
+
 .home{
     width: 100%;
     height: 100%;
+    background-color: #101010;;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 80px;
+    margin-top: 40px;
 }
 
 
@@ -70,13 +78,6 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top: solid black 1px;
-    border-bottom: solid black 1px;
-}
-
-
-.info_personal p{
-    font-size: 40px;
 }
 
 
@@ -93,7 +94,12 @@ header{
 
 
 .info_personal h1, .info_personal h3{
-    color: #262626;
+    color: white;
+}
+
+
+h1 span{
+    color:#f9004d;
 }
 
 
@@ -104,6 +110,7 @@ header{
     border-radius: 10px;
     margin-top: 50px;
     box-shadow: 0 0 10px black;
+    border: 1px solid #f9004d;
 }
 
 
@@ -126,19 +133,42 @@ header{
 .about_me{
     width: 100%;
     height: 100%;
+    background-color: #191919;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+
+
+.text_aboutme{
+    margin-top: 1.5rem;
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+    background-color: #191919;
+    border-radius: 10px;
+    border: 1px solid white;
 }
 
 
 .conteiner_aboutme{
     width: 70%;
-    height: 70%;
+    height: 50%;
     display: flex;
     justify-content: space-around;
-    align-items: start;
+    align-items: center;
 }
+
+
+.subconteiner_aboutme{
+    width: 70%;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 
 
 .conteiner_instagram{
@@ -146,12 +176,13 @@ header{
     justify-content: center;
     align-items: center;
     width: 25%;
-    height: 60%;
+    height: 80%;
     background-image: url(./Imagenes/fondoig.jpg);
     background-position: center;
     background-size: cover;
     margin-right: 5%;
     border-radius: 5%;
+    border: 3px solid #EB984E;
 }
 
 
@@ -159,8 +190,10 @@ header{
     display: inline-block;
     padding: 25px 28px;
     background: linear-gradient(#EB984E,#AF7AC5);
+    box-shadow: 0 0 10px black;
     border-radius: 10px;
 }
+
 
 
 .conteiner_github{
@@ -168,11 +201,12 @@ header{
     justify-content: center;
     align-items: center;
     width: 25%;
-    height: 60%;
+    height: 80%;
     background-image: url(./Imagenes/fondogithub.jpg);
     background-position: center;
     background-size: cover;
     border-radius: 5%;
+    border: 3px solid white;
 }
 
 
@@ -180,6 +214,7 @@ header{
     display: inline-block;
     padding: 25px 28px;
     background: linear-gradient(#909497, #4D5656);
+    box-shadow: 0 0 10px black;
     border-radius: 10px;
 }
 
@@ -189,12 +224,13 @@ header{
     justify-content: center;
     align-items: center;
     width: 25%;
-    height: 60%;
+    height: 80%;
     background-image: url(./Imagenes/fondolinkedin.jpg);
     background-position: center;
     background-size: cover;
     margin-left: 5%;
     border-radius: 5%;
+    border: 3px solid #2E86C1;
 }
 
 
@@ -202,40 +238,22 @@ header{
     display: inline-block;
     padding: 25px 28px;
     background: linear-gradient(#2E86C1, #1B2631 );
+    box-shadow: 0 0 10px black;
     border-radius: 10px;
 }
 
 
-.sub_aboutme{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.subconteiner_aboutme{
-    width: 70%;
-    height: 70%;
-    display: flex;
-    justify-content: space-around;
-    align-items: start;
-    border-bottom: solid black 1px;
-    margin-bottom: 40%;
-}
-
-
-.conteiner_futbol{
+.conteiner_pais{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 25%;
-    height: 60%;
-    background-image: url(./Imagenes/fondobelgrano.jpg);
+    height: 80%;
+    background-image: url(./Imagenes/arg.jpg);
     background-position: center;
     background-size: cover;
     border-radius: 5%;
+    border: 3px solid white;
 }
 
 
@@ -244,9 +262,287 @@ header{
     justify-content: center;
     align-items: center;
     width: 25%;
-    height: 60%;
+    height: 80%;
     background-image: url(./Imagenes/fondogym.png);
     background-position: center;
     background-size: cover;
     border-radius: 5%;
+    border: 3px solid black
 }
+
+
+.services{
+    width: 100%;
+    height: 60%;
+    background-color: #101010;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.text_services{
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    background-color: #191919;
+    border-radius: 10px;
+    border: 1px solid #f9004d;
+}
+
+
+.conteiner_services{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.conteiner_frontend{
+    height: 85%;
+    width: 20%;
+    background-color: #191919;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5%;
+    border: 1px solid #f9004d;
+}
+
+
+.text_frontend{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 50%;
+    color: white;
+}
+
+
+.conteiner_backend{
+    height: 85%;
+    width: 20%;
+    background-color: #191919;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5%;
+    border: 1px solid #f9004d;
+}
+
+
+.text_backend{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 50%;
+    color: white;
+}
+
+
+.conteiner_uxui{
+    height: 85%;
+    width: 20%;
+    background-color: #191919;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5%;
+    border: 1px solid #f9004d;
+}
+
+
+.text_uxui{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 50%;
+    color: white;
+}
+
+
+.conteiner_frontend h2,
+.conteiner_backend h2,
+.conteiner_uxui h2{
+    color: white;
+}
+
+.conteiner_frontend a,
+.conteiner_backend a,
+.conteiner_uxui a{
+    font-size: 15px;
+    color: white;
+    background-color: #101010;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+.conteiner_frontend a:hover,
+.conteiner_backend a:hover,
+.conteiner_uxui a:hover{
+    background-color: #202020;
+}
+
+
+.skills{
+    width: 100%;
+    height: 90%;
+    background-color: #191919;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.text_skills{
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    background-color: #191919;
+    border-radius: 10px;
+    border: 1px solid white;
+    margin-top: 30px;
+}
+
+
+.conteiner_skills{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.barra{
+    height: 10px;
+    width: 30%;
+    background-color: gray;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px;
+}
+
+
+.progress_html{
+    display: block;
+    width: 80%;
+    height: 100%;
+    background-color: blue;
+}
+
+
+.progress_css{
+    display: block;
+    width: 70%;
+    height: 100%;
+    background-color: blue;
+}
+
+
+.progress_javascript{
+    display: block;
+    width: 0%;
+    height: 100%;
+    background-color: blue;
+}
+
+
+.progress_reactjs{
+    display: block;
+    width: 0%;
+    height: 100%;
+    background-color: blue;
+}
+
+
+.progress_nodejs{
+    display: block;
+    width: 0%;
+    height: 100%;
+    background-color: blue;
+}
+
+
+.progress_angular{
+    display: block;
+    width: 0%;
+    height: 100%;
+    background-color: blue;
+}
+
+
+.progress_python{
+    display: block;
+    width: 75%;
+    height: 100%;
+    background-color: blue;
+}
+
+
+.progress_php{
+    display: block;
+    width: 0%;
+    height: 100%;
+    background-color: blue;
+}
+
+
+.progress_mysql{
+    display: block;
+    width: 0%;
+    height: 100%;
+    background-color: blue;
+}
+
+
+.nav_footer{
+    color: white;
+    width: 100%;
+    height: 31%;
+    background-color: #101010;
+}
+
+
+.footer_row{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.footer_links{
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+.footer_links h4{
+    text-align: center;
+    border-bottom: 1px solid #f9004d;
+    margin-bottom: 20px;
+}
+
+
+.footer_links li{
+    margin-bottom: 20px;
+}
+
+
+.footer_links_icons li{
+    margin-top: 40%;
+}
+
+

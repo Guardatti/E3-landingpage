@@ -2,24 +2,29 @@
     <head>
         <link rel="stylesheet" href="style.css">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-        <title>Home | Nicolás</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'/>
+        <title>LandingPage | Nicolás</title>
     </head>
     <body>
         <header>
             <nav class="nav">
+                <img src="./Imagenes/logo.png">
                 <ul class="menu">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about_me">About me</a></li>
                     <li><a href="#services">Services</a></li>
+                    <li><a href="#skills">Skills</a></li>
                     <li><a href="#portafolio">Portafolio</a></li>
                 </ul>
+                <img src="./Imagenes/menu.png" alt="menu hamburguer" class="menu_hamburguer">
             </nav>
         </header>
+        
         <section class="home" id="home">
             <div class="conteiner_home">
                 <div class="info_personal">
                     <h3>Hello, It's Me!</h3>
-                    <h1>Nicolás Guardatti</h1>
+                    <h1>Nicolás <span>Guardatti</span></h1>
                     <h3>And I'm systems engineering student and full stack development student</h3>
                     <a download="CV - Nicolás Guardatti" href="CV - Nicolás Guardatti (actualizado).pdf" class="button">Download CV</a>
                 </div>
@@ -28,10 +33,13 @@
         </section>
         
         <section class="about_me" id="about_me">
+            <div class="text_aboutme">
+                <h1>About Me</h1>
+            </div>
             <div class="conteiner_aboutme">
                 <div class="conteiner_instagram">
                     <div class="instagram">
-                        <a class="enlaceinstagram" href="https://www.instagram.com/nicoo_guardatti/" target="_blank">click to enter</a>
+                        <a class="enlaceinstagram" href="https://www.instagram.com/nicoo_guardatti/" target="_blank">Click to enter</a>
                     </div>
                 </div>
                 <div class="conteiner_github">
@@ -45,18 +53,137 @@
                     </div>
                 </div>
             </div>
-        </section>
-
-        <section class="sub_aboutme">
             <div class="subconteiner_aboutme">
-                <div class="conteiner_futbol"></div>
+                <div class="conteiner_pais"></div>
                 <div class="conteiner_gym"></div>
             </div>
         </section>
 
-        <section class="services" id="services"></section>
-        
+        <section class="services" id="services">
+            <div class="text_services">
+                <h1>Services</h1>
+            </div>
+            <div class="conteiner_services">
+                <div class="conteiner_frontend">
+                    <img src="./Imagenes/frontend.png">
+                    <h2>Frontend Development</h2>
+                    <div class="text_frontend">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, aperiam impedit totam repellendus dolorum voluptates?
+                        </p>
+                    </div>
+                    <a href="#" target="_blank">Contact Me</a>
+                </div>
+                <div class="conteiner_backend">
+                    <img src="./Imagenes/backend.png">
+                    <h2>Backend Development</h2>
+                    <div class="text_backend">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, aperiam impedit totam repellendus dolorum voluptates?
+                        </p>
+                    </div>
+                    <a href="#" target="_blank">Contact Me</a>
+                </div>
+                <div class="conteiner_uxui">
+                    <img src="./Imagenes/uxui.png">
+                    <h2>Designer UX/UI</h2>
+                    <div class="text_uxui">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, aperiam impedit totam repellendus dolorum voluptates?
+                        </p>
+                    </div>
+                    <a href="#" target="_blank">Contact Me</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills" id="skills">
+            <div class="text_skills">
+                <h1>Skills</h1>
+            </div>
+            <div class="conteiner_skills">
+                <img src="./Imagenes/html.png" width="24px">
+                <div class="barra">
+                    <span class="progress_html"></span>
+                </div>
+
+                
+                <img src="./Imagenes/css.png" width="24px">
+                <div class="barra">
+                    <span class="progress_css"></span>
+                </div>
+
+                
+                <img src="./Imagenes/javascript.png" width="24px">
+                <div class="barra">
+                    <span class="progress_javascript"></span>
+                </div>
+
+                
+                <img src="./Imagenes/reactjs.png" width="24px">
+                <div class="barra">
+                    <span class="progress_reactjs"></span>
+                </div>
+
+                
+                <img src="./Imagenes/nodejs.png" width="24px">
+                <div class="barra">
+                    <span class="progress_nodejs"></span>
+                </div>
+
+                
+                <img src="./Imagenes/angular.png" width="24px">
+                <div class="barra">
+                    <span class="progress_angular"></span>
+                </div>
+
+                
+                <img src="./Imagenes/python.png" width="24px">
+                <div class="barra">
+                    <span class="progress_python"></span>
+                </div>
+
+
+                <img src="./Imagenes/php.png" width="24px">
+                <div class="barra">
+                    <span class="progress_php"></span>
+                </div>
+
+
+                <img src="./Imagenes/mysql.png" width="24px">
+                <div class="barra">
+                    <span class="progress_mysql"></span>
+                </div>          
+            </div>
+        </section>
+    
         <section class="portafolio" id="portafolio"></section>
+
+        <footer class="nav_footer">
+            <div class="conteiner_footer">
+                <div class="footer_row">
+                    <div class="footer_links">
+                        <h4>Menu</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about_me">About Me</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#skills">Skils</a></li>
+                            <li><a href="#portafolio">Portafolio</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_links">
+                        <h4>Follow Me</h4>
+                        <ul class="footer_links_icons">
+                            <li><a href="https://www.instagram.com/nicoo_guardatti/" target="_blank"><img src="./Imagenes/ig.png" width="24px"></a></li>
+                            <li><a href="https://github.com/Guardatti" target="_blank"><img src="./Imagenes/gh.png" width="24px"></a></li>
+                            <li><a href="https://www.linkedin.com/in/nicol%C3%A1s-guardatti-14b22125b/" target="_blank"><img src="./Imagenes/in.png" width="24px"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
 
     </body>
 </html>
